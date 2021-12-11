@@ -155,8 +155,20 @@ img {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--secondary-bg-color);
   text-align: center;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bgphoto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-image {
 }
 
 .hero .hero-title {
@@ -424,6 +436,12 @@ img {
   flex-basis: calc(100% / 3 - var(--gallery-list-gap));
   margin-right: var(--gallery-list-gap);
   margin-bottom: var(--gallery-list-gap);
+}
+
+.gallery-item:hover,
+.gallety-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-item:nth-child(3n) {
