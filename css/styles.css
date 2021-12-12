@@ -320,6 +320,7 @@ img {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .team-member-info {
@@ -334,6 +335,42 @@ img {
 .list-item img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.social-networks-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-item {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  color: var(--secondary-gray-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.logo-social {
+  fill: currentColor;
 }
 
 /* Постоянные клиенты */
@@ -436,6 +473,50 @@ img {
 
 .address {
   max-width: 231px;
+}
+
+.address-container {
+  margin-right: 70px;
+}
+
+.join-us {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+.footer-list {
+  display: flex;
+}
+
+.social-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-text-color);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.footer-position {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-social-footer {
+  fill: currentColor;
 }
 
 /*Стили файла portfolio.html */
