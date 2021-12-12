@@ -138,6 +138,9 @@ img {
 }
 
 .contacts-list .contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--description-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -156,12 +159,6 @@ img {
   fill: currentColor;
 }
 
-.contacts-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Стили файла index.html */
 /* Герой */
 
@@ -169,7 +166,6 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -275,7 +271,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 25px 100px;
+  height: 120px;
   background-color: var(--reserv-bg-color);
   margin-bottom: 30px;
 }
@@ -393,7 +389,6 @@ img {
   margin-right: 30px;
   width: 170px;
   height: 92px;
-  padding: 16px 32px;
   border: 1px solid var(--secondary-gray-color);
   box-sizing: border-box;
   border-radius: 4px;
@@ -585,7 +580,7 @@ img {
 }
 
 .gallery-link:hover,
-.gallety-link:focus {
+.gallery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
