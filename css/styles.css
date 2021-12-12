@@ -6,6 +6,8 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #2f303a;
   --bg-button-color: #f5f4fa;
+  --secondary-gray-color: #afb1b8;
+  --reserv-bg-color: #f5f4fa;
   --gallery-list-gap: 30px;
 }
 
@@ -149,6 +151,17 @@ img {
   color: var(--accent-color);
 }
 
+.logo-contacts {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Стили файла index.html */
 /* Герой */
 
@@ -188,6 +201,8 @@ img {
 }
 
 .hero-button {
+  width: 200px;
+  height: 50px;
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
   font-family: inherit;
@@ -199,6 +214,8 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -244,12 +261,23 @@ img {
 }
 
 .list-item {
-  width: calc((100% -90px) / 4);
+  /* width: calc((100% -90px) / 4); */
+  width: 270px;
+  height: 251px;
   margin-right: 30px;
 }
 
 .list-item:last-child {
   margin-right: 0;
+}
+
+.benefits-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px;
+  background-color: var(--reserv-bg-color);
+  margin-bottom: 30px;
 }
 
 /* Чем мы занимаемся*/
@@ -270,13 +298,11 @@ img {
 /* Наша команда */
 
 .team-section {
-  background-color: #f5f4fa;
+  background-color: var(--reserv-bg-color);
+  height: 708px;
 }
 .team-list {
   display: flex;
-}
-
-.services-list .list-item {
 }
 
 .team-list .team-title {
@@ -308,6 +334,56 @@ img {
 .list-item img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Постоянные клиенты */
+
+.clients-section {
+  padding-top: 90px;
+  padding-bottom: 104px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid var(--secondary-gray-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-list-item:last-child {
+  margin-right: 0;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 170px;
+  min-height: 92px;
+  color: var(--secondary-gray-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.logo-clients {
+  fill: currentColor;
 }
 
 /* Футер */
@@ -427,6 +503,12 @@ img {
   text-decoration: none;
 }
 
+.gallery-link:hover,
+.gallety-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
@@ -436,12 +518,6 @@ img {
   flex-basis: calc(100% / 3 - var(--gallery-list-gap));
   margin-right: var(--gallery-list-gap);
   margin-bottom: var(--gallery-list-gap);
-}
-
-.gallery-item:hover,
-.gallety-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-item:nth-child(3n) {
